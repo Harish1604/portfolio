@@ -2,23 +2,19 @@
 
 A premium, interactive, terminal-inspired personal portfolio built to invoke the aesthetic of a "serious builder" while maintaining high-end modern web standards. Built with Next.js, Tailwind CSS, and Framer Motion. 
 
-This is not just a gimmick clone: it’s a fully responsive, animated, dark-mode-first Developer Command Center designed to impress.
+This is not just a gimmick clone: it’s a fully responsive, animated, dark-mode-first Developer Command Center designed to showcase complex backend and cloud projects.
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-## 🚀 Live Demo
-
-*You can deploy this seamlessly using Vercel. Connect your repository to Vercel and it will auto-detect the Next.js setup.*
-
 ## ⚡ Features
 
 - **Terminal Aesthetics**: Glassmorphic dark panels, neon green `#00ff88` accents, and monospace command structures.
-- **Micro-interactions**: Typing effects (`history`, `cat`, `ls`), blinking cursors, and custom selection styling.
-- **Expandable Project Windows**: View detailed stats and source code links dynamically as "sub-directories" under the `~/projects` terminal.
-- **Global CRT Overlay**: A subtle, purely CSS matrix/scanline texture overlay applied passively over the viewport.
+- **Micro-interactions**: Typing effects (`history`, `cat`, `ls`), blinking cursors, and interactive clickable achievement logs.
+- **Expandable Project Windows**: View detailed stats, source code links, and full-stack tech breakdowns dynamically as "sub-directories" under the `~/projects` terminal.
+- **Interactive Certificates**: Direct links to recognized certifications and research papers via the achievements dashboard.
 - **Responsive Design**: Designed to scale flawlessly from massive ultra-wide monitors down to standard mobile views.
 
 ## 🛠 Tech Stack
@@ -33,23 +29,16 @@ This is not just a gimmick clone: it’s a fully responsive, animated, dark-mode
 
 ```bash
 portfolio/
+├── public/
+│   └── resume/             # Contains the hosted resume PDF
 ├── src/
 │   ├── app/
 │   │   ├── globals.css     # Theme configuration and CRT scanline effects
 │   │   ├── layout.tsx      # Font (Geist/Mono) and metadata setup 
 │   │   └── page.tsx        # Main compositional page assembling all sections
 │   ├── components/
-│   │   ├── sections/       # Core layout components
-│   │   │   ├── Hero.tsx
-│   │   │   ├── About.tsx
-│   │   │   ├── Experience.tsx
-│   │   │   ├── Projects.tsx
-│   │   │   ├── Skills.tsx
-│   │   │   ├── Achievements.tsx
-│   │   │   └── Contact.tsx
+│   │   ├── sections/       # Core layout components (Hero, Projects, Achievements)
 │   │   └── ui/             # Reusable primitive UI
-│   │       ├── command-line-prompt.tsx
-│   │       └── terminal-window.tsx
 ```
 
 ## 💻 Running the App Locally
@@ -72,13 +61,6 @@ portfolio/
 
 4. **View locally**
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-## 🎨 Customization
-
-To swap out the core theme color (currently neon green):
-1. Navigate to `src/app/globals.css`.
-2. Modify the `--primary` and `--ring` variables under `:root, .dark` to your desired HEX code.
-3. Everything else (glows, text accents, and shadows) will adapt automatically.
 
 ## 🤝 Contact / Network
 

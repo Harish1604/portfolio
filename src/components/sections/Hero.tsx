@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { TerminalWindow } from "../ui/terminal-window";
 import { CommandLinePrompt } from "../ui/command-line-prompt";
+import { InteractivePrompt } from "../ui/interactive-prompt";
 
 export function Hero() {
   const [showRole, setShowRole] = useState(false);
@@ -72,7 +73,7 @@ export function Hero() {
                 <a href="#projects" className="group flex items-center gap-2 border border-primary/50 bg-primary/10 hover:bg-primary/20 px-4 py-2 rounded transition-colors text-primary">
                   <span>[</span> View Projects <span>]</span>
                 </a>
-                <a href="/resume-afford.pdf" target="_blank" className="group flex items-center gap-2 border border-border bg-card/50 hover:bg-card px-4 py-2 rounded transition-colors">
+                <a href="/resume/resume-harish.pdf" target="_blank" className="group flex items-center gap-2 border border-border bg-card/50 hover:bg-card px-4 py-2 rounded transition-colors">
                   <span>[</span> Resume <span>]</span>
                 </a>
                 <a href="#contact" className="group flex items-center gap-2 border border-border bg-card/50 hover:bg-card px-4 py-2 rounded transition-colors">
@@ -82,17 +83,9 @@ export function Hero() {
             </motion.div>
           )}
 
-          {/* Persistent Blinking Cursor if everything is done */}
+          {/* Interactive Prompt replaces the static blinking cursor */}
           {showActions && (
-            <div className="mt-8 flex text-primary/80 shrink-0 font-mono items-center gap-2">
-              <span className="text-secondary-foreground">harish</span>
-              <span className="text-muted-foreground">@</span>
-              <span className="text-primary">portfolio</span>
-              <span className="text-muted-foreground ml-1">:</span>
-              <span className="text-blue-400 ml-1">~</span>
-              <span className="text-primary ml-2">$</span>
-              <span className="inline-block w-2.5 h-5 bg-primary ml-1 animate-pulse translate-y-1" />
-            </div>
+            <InteractivePrompt />
           )}
         </TerminalWindow>
       </div>

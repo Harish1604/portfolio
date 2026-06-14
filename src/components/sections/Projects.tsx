@@ -8,20 +8,36 @@ import { FolderGit2, X, ExternalLink, GitBranch } from "lucide-react";
 
 const projects = [
   {
+    id: "voicegate",
+    name: "VoiceGate",
+    desc: "Multilingual real-time voice translator.",
+    stack: ["Python", "WebSockets", "VAD", "STT/TTS"],
+    details: "A real-time multilingual voice translation pipeline. Features optimized audio stream segmentation, advanced VAD silence thresholds, and robust STT integration for low-latency conversational experiences.",
+    githubUrl: "https://github.com/Harish1604/VoiceGate.git"
+  },
+  {
+    id: "costpilot",
+    name: "CostPilot",
+    desc: "Cloud analytics & cost optimization dashboard.",
+    stack: ["React", "GCP", "Next.js", "Dashboard"],
+    details: "A full-stack cloud analytics dashboard built to monitor deployed workloads, estimate cost usage, identify waste, and provide optimization recommendations for Google Cloud Platform services. Built to solve real credit-burn issues for small/solo developer projects.",
+    githubUrl: "https://github.com/Harish1604/costpilot.git"
+  },
+  {
+    id: "cloudshield",
+    name: "CloudShield",
+    desc: "Distributed load balancing & monitoring.",
+    stack: ["Docker", "Nginx", "Prometheus", "Grafana"],
+    details: "A containerized cloud infrastructure project demonstrating how modern production systems handle traffic distribution, backend scalability, and observability. Uses multiple backend nodes behind a reverse proxy load balancer with real-time metrics collection.",
+    githubUrl: "https://github.com/Harish1604/cloudshield.git"
+  },
+  {
     id: "heliix",
     name: "HeliiX",
     desc: "Federated social networking platform.",
     stack: ["FastAPI", "React", "Next.js", "Supabase", "GCP"],
     details: "A fully federated social network built for scalability. Uses activity pub and a robust distributed backend layout.",
     githubUrl: "https://github.com/federated-social-network"
-  },
-  {
-    id: "cloudshield",
-    name: "CloudShield",
-    desc: "Distributed load balancing + monitoring.",
-    stack: ["Docker", "Nginx", "Prometheus", "Grafana"],
-    details: "Containerized architecture simulating real-world traffic proxying and robust system health monitoring.",
-    githubUrl: "https://github.com/Harish1604/cloudshield.git"
   },
   {
     id: "certichain",
@@ -32,28 +48,12 @@ const projects = [
     githubUrl: "https://github.com/Harish1604/certichain_.git"
   },
   {
-    id: "deduvault",
-    name: "DeduVault",
-    desc: "Blockchain + IPFS deduplication platform",
-    stack: ["Blockchain", "IPFS", "Solidity", "Node.js"],
-    details: "Optimizes cloud storage continuously by stripping out duplicated byte-blocks via IPFS addressing.",
-    githubUrl: "https://github.com/Harish1604/deduvault.git"
-  },
-  {
     id: "chediiai",
     name: "Chedii-AI",
     desc: "Azure AI crop disease detection",
     stack: ["Azure AI", "Python", "FastAPI"],
     details: "Leverages cloud-based computer vision APIs to detect, classify and recommend treatments for flora infections.",
     githubUrl: "https://github.com/Chedii-AI"
-  },
-  {
-    id: "costpilot",
-    name: "CostPilot",
-    desc: "Cloud cost optimization platform",
-    stack: ["React", "AWS", "Dashboard", "Charts"],
-    details: "Interactive dashboard aggregating diverse cloud bills to suggest automated right-sizing tweaks.",
-    githubUrl: "https://github.com/Harish1604/costpilot.git"
   }
 ];
 
